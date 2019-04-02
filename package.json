@@ -1,0 +1,22 @@
+{
+  "name": "functional-programming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "functionals.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ./*.js",
+    "watch": "jest test --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.4.1",
+    "jest": "^24.5.0",
+    "nodemon": "^1.18.10"
+  }
+}
