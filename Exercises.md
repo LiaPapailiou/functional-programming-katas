@@ -1,11 +1,20 @@
 Everything in this document is copied from [here](https://gist.github.com/oskarkv/3168ea3f8d7530ccd94c97c19aafe266)
 
+------
 
-* Tips/Notes
+* About
+
+I came up with these exercises for someone learning to code. But I thought more people might want to do them.
+
+I like functional programming, so the exercises asks you to make functions that are common in functional programming. If you have learned a language, but want to learn more about functional programming, these exercises are for you.
+
+The exercises were originally meant for Python, but doing them in JavaScript, Ruby or any Lisp (Scheme, Clojure, ...) should work just as well. It should also be possible to do them in Java and C#, but it will probably not be as easy.
 
 Most of the functions you are asked to create already exist in functional languages, or libraries for most languages. But it can be educational to implement them yourself.
 
 The exercises are just very roughly in order of difficulty. If you get stuck on one, try the next.
+
+* Tips/Notes
 
 A "map" is the same as a dictionary or hash table, i.e. a data structure that maps keys to values.
 
@@ -191,7 +200,7 @@ interleave([1, 2, 3], [10, 20, 30], "abc")
 
 ** every_pred
 
-Create a function =every_pred= that takes an arbitrary number of predicates (functions that return a truth value) and returns a function that returns true if and only if all predicates was truthy for the argument.
+Create a function =every_pred= that takes an arbitrary number of predicates (functions that return a truth value) and returns a function that returns true if and only if all predicates were truthy for the argument.
 
 #+BEGIN_SRC python
 every_pred(positive, even)(8) => True
