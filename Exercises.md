@@ -1,5 +1,7 @@
 Everything in this document is copied from [here](https://gist.github.com/oskarkv/3168ea3f8d7530ccd94c97c19aafe266)
 
+Can't get the formatting to work properly so you probably want to go directly to the gist ^^
+
 ------
 
 * About
