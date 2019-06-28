@@ -1,4 +1,4 @@
-Everything in this document is copied from (here)[https://gist.github.com/oskarkv/3168ea3f8d7530ccd94c97c19aafe266]
+Everything in this document is copied from [here](https://gist.github.com/oskarkv/3168ea3f8d7530ccd94c97c19aafe266)
 
 
 * Tips/Notes
