@@ -53,7 +53,7 @@ Create a function `clist` (for create list) that takes an arbitrary number of ar
 If you use a Lisp, it already exists in the form of `list`, and you can skip this exercise.
 
 ```python
-clist(1, 2, 3) ` [1, 2, 3]
+clist(1, 2, 3) => [1, 2, 3]
 ```
 
 ### add, sub
