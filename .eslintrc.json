@@ -1,0 +1,13 @@
+{
+    "extends": "airbnb-base",
+    "env": {
+      "es6": true,
+      "jest": true
+    },
+    "plugins": [
+      "jest"
+    ],
+    "rules": {
+      "padded-blocks": 0
+    }
+}

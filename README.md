@@ -1,10 +1,5 @@
 # Functional programming exercises
 
-
-This repository contains functional programming exercises borrowed from this gist: https://gist.github.com/oskarkv/3168ea3f8d7530ccd94c97c19aafe266
-
-It can be used as extra tasks / katas during the course, when people run out of tasks.
-
 ## The exercises
 
 Everything in this document is copied from [here](https://gist.github.com/oskarkv/3168ea3f8d7530ccd94c97c19aafe266)
