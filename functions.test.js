@@ -1,5 +1,5 @@
 const {
-  clist, add, sub, double, negate, compose, zip, zipmap, zipwith, cons, car, cdr, partial, transpose, flip, flips, take, range, drop,
+  clist, add, sub, double, negate, compose, zip, zipmap, zipwith, cons, car, cdr, partial, transpose, flip, flips, take, range, drop, flat,
 } = require('./functions');
 
 describe('Testing math functions', () => {
@@ -33,10 +33,10 @@ describe('testing more advanced functions', () => {
     expect(zip([1, 2, 3], [4, 5, 6])).toEqual([[1, 4], [2, 5], [3, 6]]);
     expect(zip([1, 2, 3], [4, 5, 6], [7, 8, 9])).toEqual([[1, 4, 7], [2, 5, 8], [3, 6, 9]]);
   });
-  test('"zipmap" should "zipmap" two number sequences', () => {
+  xtest('"zipmap" should "zipmap" two number sequences', () => {
     expect(zipmap([1, 2, 3], [4, 5, 6])).toEqual({ 1: 4, 2: 5, 3: 6 });
   });
-  test('"zipwith" should "zip" an arbitrary number of sequences with given function', () => {
+  xtest('"zipwith" should "zip" an arbitrary number of sequences with given function', () => {
     expect(zipwith(add, [1, 2, 3], [4, 5, 6])).toEqual([5, 7, 9]);
     expect(zipwith(add, [1, 2, 3], [4, 5, 6], [1, 1, 1])).toEqual([6, 8, 10]);
   });
@@ -51,7 +51,7 @@ describe('testing more advanced functions', () => {
     expect(partial(clist, 1, 2)(3, 4)).toEqual([1, 2, 3, 4]);
     expect(partial(sub, 10)(1, 2)).toEqual(7);
   });
-  test('"transpose" should transpose a matrix ', () => {
+  xtest('"transpose" should transpose a matrix ', () => {
     expect(transpose([[1, 2, 3], [4, 5, 6]])).toEqual([[1, 4], [2, 5], [3, 6]]);
     expect(transpose([[1, 2, 3], [4, 5, 6], [7, 8, 9]])).toEqual([[1, 4, 7], [2, 5, 8], [3, 6, 9]]);
     expect(transpose([[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [1, 2, 3]]))
@@ -72,5 +72,6 @@ describe('testing more advanced functions', () => {
     expect(drop(3, range(6))).toEqual([3, 4, 5]);
   });
   test('"flatten" flattens a tree', () => {
+    expect(flat([1, 2, [3, 4], 5, 6, [7, 8, 9], 10])).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
   });
 });
